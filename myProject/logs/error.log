@@ -1,0 +1,950 @@
+2020-08-14 10:04:55 Error: [Cake\Http\Exception\MissingControllerException] Controller class Myproject could not be found. in /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Myproject',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:249
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /myproject/students
+Client IP: 172.17.0.1
+
+
+2020-08-14 10:05:15 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myproject.students' doesn't exist in /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 142
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:100
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:84
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:509
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:277
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:177
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1679
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1261
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:208
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:177
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php:203
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:780
+- /var/html/myProject/src/Controller/StudentsController.php:20
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myproject.students' doesn't exist in /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 39
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:178
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:74
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Connection.php:310
+- /var/html/myProject/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:69
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Connection.php:313
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:140
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:100
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:84
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:509
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:277
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:177
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1679
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1261
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:208
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:177
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php:203
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:780
+- /var/html/myProject/src/Controller/StudentsController.php:20
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /students
+Client IP: 172.17.0.1
+
+
+2020-08-14 10:07:43 Error: [Cake\View\Exception\MissingTemplateException] Template file `Students/index.php` could not be found.
+
+The following paths were searched:
+
+- `/var/html/myProject/templates/Students/index.php`
+- `/var/html/myProject/vendor/cakephp/cakephp/templates/Students/index.php`
+ in Students/index.php on line 1331
+Exception Attributes: array (
+  'file' => 'Students/index.php',
+  'paths' => 
+  array (
+    0 => '/var/html/myProject/templates/',
+    1 => '/var/html/myProject/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/View/View.php:748
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:688
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:530
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /students
+Client IP: 172.17.0.1
+
+
+2020-08-17 02:03:57 Error: [Cake\View\Exception\MissingTemplateException] Template file `Students/index.php` could not be found.
+
+The following paths were searched:
+
+- `/var/html/myProject/templates/Students/index.php`
+- `/var/html/myProject/vendor/cakephp/cakephp/templates/Students/index.php`
+ in Students/index.php on line 1331
+Exception Attributes: array (
+  'file' => 'Students/index.php',
+  'paths' => 
+  array (
+    0 => '/var/html/myProject/templates/',
+    1 => '/var/html/myProject/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/View/View.php:748
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:688
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:530
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /students
+Client IP: 172.17.0.1
+
+
+2020-08-17 02:39:37 Error: [Cake\View\Exception\MissingTemplateException] Template file `Students/index.php` could not be found.
+
+The following paths were searched:
+
+- `/var/html/myProject/templates/Students/index.php`
+- `/var/html/myProject/vendor/cakephp/cakephp/templates/Students/index.php`
+ in Students/index.php on line 1331
+Exception Attributes: array (
+  'file' => 'Students/index.php',
+  'paths' => 
+  array (
+    0 => '/var/html/myProject/templates/',
+    1 => '/var/html/myProject/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/View/View.php:748
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:688
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:530
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /students
+Client IP: 172.17.0.1
+
+
+2020-08-17 02:46:57 Error: [Cake\View\Exception\MissingTemplateException] Template file `Students/view.php` could not be found.
+
+The following paths were searched:
+
+- `/var/html/myProject/templates/Students/view.php`
+- `/var/html/myProject/vendor/cakephp/cakephp/templates/Students/view.php`
+ in Students/view.php on line 1331
+Exception Attributes: array (
+  'file' => 'Students/view.php',
+  'paths' => 
+  array (
+    0 => '/var/html/myProject/templates/',
+    1 => '/var/html/myProject/vendor/cakephp/cakephp/templates/',
+  ),
+)
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/View/View.php:748
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:688
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:530
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /students/view/1
+Client IP: 172.17.0.1
+
+
+2020-08-17 07:27:42 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myproject.categories' doesn't exist in /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 142
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:100
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:84
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:509
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:649
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:494
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:449
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:811
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:2482
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1264
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:208
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:177
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php:203
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:780
+- /var/html/myProject/src/Controller/ProductsController.php:24
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myproject.categories' doesn't exist in /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 39
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:178
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:74
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Connection.php:310
+- /var/html/myProject/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:69
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Connection.php:313
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:140
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:100
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:84
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:509
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:649
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:494
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:449
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:811
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:2482
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1264
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:208
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:177
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php:203
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:780
+- /var/html/myProject/src/Controller/ProductsController.php:24
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /products
+Client IP: 172.17.0.1
+
+
+2020-08-17 07:27:51 Error: [Cake\Http\Exception\MissingControllerException] Controller class Product could not be found. in /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Product',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:249
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /product
+Client IP: 172.17.0.1
+
+
+2020-08-17 07:27:59 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myproject.categories' doesn't exist in /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 142
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:100
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:84
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:509
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:649
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:494
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:449
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:811
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:2482
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1264
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:208
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:177
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php:203
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:780
+- /var/html/myProject/src/Controller/ProductsController.php:24
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myproject.categories' doesn't exist in /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 39
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:178
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:74
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Connection.php:310
+- /var/html/myProject/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:69
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Connection.php:313
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:140
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:100
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:84
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:509
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:649
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:494
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:449
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:811
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:2482
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1264
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:208
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:177
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php:203
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:780
+- /var/html/myProject/src/Controller/ProductsController.php:24
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /products
+Client IP: 172.17.0.1
+
+
+2020-08-17 07:35:03 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myproject.categories' doesn't exist in /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 142
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:100
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:84
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:509
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:649
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:494
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:449
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:811
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:2482
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1264
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:208
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:177
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php:203
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:780
+- /var/html/myProject/src/Controller/ProductsController.php:24
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myproject.categories' doesn't exist in /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 39
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:178
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:74
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Connection.php:310
+- /var/html/myProject/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:69
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Connection.php:313
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:140
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:100
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:84
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:509
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:649
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:494
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:449
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:811
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:2482
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1264
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:208
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:177
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php:203
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:780
+- /var/html/myProject/src/Controller/ProductsController.php:24
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /products
+Client IP: 172.17.0.1
+
+
+2020-08-17 07:35:30 Error: [Cake\Http\Exception\MissingControllerException] Controller class MyProject could not be found. in /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'MyProject',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:249
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /myProject
+Client IP: 172.17.0.1
+
+
+2020-08-17 07:35:51 Error: [Cake\Http\Exception\MissingControllerException] Controller class MyProject could not be found. in /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'MyProject',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:249
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /myProject/students
+Client IP: 172.17.0.1
+
+
+2020-08-17 07:36:31 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myproject.categories' doesn't exist in /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 142
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:100
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:84
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:509
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:649
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:494
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:449
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:811
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:2482
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1264
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:208
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:177
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php:203
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:780
+- /var/html/myProject/src/Controller/ProductsController.php:24
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myproject.categories' doesn't exist in /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 39
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php:178
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php:74
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Connection.php:310
+- /var/html/myProject/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:69
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Connection.php:313
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:140
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:100
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:84
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:509
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:649
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:494
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:449
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Query.php:811
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:2482
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1264
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:208
+- /var/html/myProject/vendor/cakephp/cakephp/src/Datasource/Paginator.php:177
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php:203
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:780
+- /var/html/myProject/src/Controller/ProductsController.php:24
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /products
+Client IP: 172.17.0.1
+
+
+2020-08-17 08:02:33 Error: [RuntimeException] TimestampBehavior only supports columns of type DateTimeType. in /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Behavior/TimestampBehavior.php on line 223
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Behavior/TimestampBehavior.php:122
+- /var/html/myProject/vendor/cakephp/cakephp/src/Event/EventManager.php:309
+- /var/html/myProject/vendor/cakephp/cakephp/src/Event/EventManager.php:286
+- /var/html/myProject/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php:92
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1901
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1835
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1535
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Connection.php:691
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1536
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1836
+- /var/html/myProject/src/Controller/ProductsController.php:55
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:164
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /products/add
+Referer URL: http://localhost:8081/products/add
+Client IP: 172.17.0.1
+
+
+2020-08-17 08:03:48 Error: [RuntimeException] TimestampBehavior only supports columns of type DateTimeType. in /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Behavior/TimestampBehavior.php on line 223
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Behavior/TimestampBehavior.php:122
+- /var/html/myProject/vendor/cakephp/cakephp/src/Event/EventManager.php:309
+- /var/html/myProject/vendor/cakephp/cakephp/src/Event/EventManager.php:286
+- /var/html/myProject/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php:92
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1901
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1835
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1535
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Connection.php:691
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1536
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:1836
+- /var/html/myProject/src/Controller/ProductsController.php:55
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:164
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /products/add
+Referer URL: http://localhost:8081/products/add
+Client IP: 172.17.0.1
+
+
+2020-08-17 08:26:13 Error: [Cake\Controller\Exception\MissingActionException] Action BlogsController::index() could not be found, or is not accessible. in /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php on line 500
+Exception Attributes: array (
+  'controller' => 'BlogsController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /blogs
+Client IP: 172.17.0.1
+
+
+2020-08-17 08:27:24 Error: [Cake\Controller\Exception\MissingActionException] Action BlogsController::index() could not be found, or is not accessible. in /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php on line 500
+Exception Attributes: array (
+  'controller' => 'BlogsController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /blogs
+Client IP: 172.17.0.1
+
+
+2020-08-17 09:33:51 Error: [Cake\View\Exception\MissingElementException] Element file `nav.php` could not be found.
+
+The following paths were searched:
+
+- `/var/html/myProject/templates/element/nav.php`
+- `/var/html/myProject/vendor/cakephp/cakephp/templates/element/nav.php`
+ in nav.php on line 660
+Exception Attributes: array (
+  'file' => 'nav.php',
+  'paths' => 
+  array (
+    0 => '/var/html/myProject/templates/element/',
+    1 => '/var/html/myProject/vendor/cakephp/cakephp/templates/element/',
+  ),
+)
+Stack Trace:
+- /var/html/myProject/templates/Blogs/home.php:15
+- /var/html/myProject/vendor/cakephp/cakephp/src/View/View.php:1160
+- /var/html/myProject/vendor/cakephp/cakephp/src/View/View.php:1121
+- /var/html/myProject/vendor/cakephp/cakephp/src/View/View.php:751
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:688
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:530
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /blogs/home
+Client IP: 172.17.0.1
+
+
+2020-08-17 10:17:53 Error: [Cake\Controller\Exception\MissingActionException] Action BlogsController::about() could not be found, or is not accessible. in /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php on line 500
+Exception Attributes: array (
+  'controller' => 'BlogsController',
+  'action' => 'about',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /blogs/about
+Referer URL: http://localhost:8081/blogs/home
+Client IP: 172.17.0.1
+
+
+2020-08-17 10:19:50 Error: [Cake\Controller\Exception\MissingActionException] Action BlogsController::contact() could not be found, or is not accessible. in /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php on line 500
+Exception Attributes: array (
+  'controller' => 'BlogsController',
+  'action' => 'contact',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /blogs/contact
+Referer URL: http://localhost:8081/blogs/home
+Client IP: 172.17.0.1
+
+

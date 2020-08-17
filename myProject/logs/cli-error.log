@@ -1,0 +1,39 @@
+2020-08-17 07:21:05 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myproject.products' doesn't exist in /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php on line 142
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:100
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:84
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:509
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:649
+- /var/html/myProject/vendor/cakephp/bake/src/Command/ModelCommand.php:200
+- /var/html/myProject/vendor/cakephp/bake/src/Command/ModelCommand.php:123
+- /var/html/myProject/vendor/cakephp/bake/src/Command/ModelCommand.php:99
+- /var/html/myProject/vendor/cakephp/bake/src/Command/ModelCommand.php:82
+- /var/html/myProject/vendor/cakephp/bake/src/Command/AllCommand.php:102
+- /var/html/myProject/vendor/cakephp/cakephp/src/Console/BaseCommand.php:179
+- /var/html/myProject/vendor/cakephp/cakephp/src/Console/CommandRunner.php:336
+- /var/html/myProject/vendor/cakephp/cakephp/src/Console/CommandRunner.php:171
+- /var/html/myProject/bin/cake.php:12
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myproject.products' doesn't exist in /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php on line 39
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php:39
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Connection.php:310
+- /var/html/myProject/vendor/cakephp/cakephp/src/Core/Retry/CommandRetry.php:69
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Connection.php:313
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:140
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/Collection.php:100
+- /var/html/myProject/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php:84
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:509
+- /var/html/myProject/vendor/cakephp/cakephp/src/ORM/Table.php:649
+- /var/html/myProject/vendor/cakephp/bake/src/Command/ModelCommand.php:200
+- /var/html/myProject/vendor/cakephp/bake/src/Command/ModelCommand.php:123
+- /var/html/myProject/vendor/cakephp/bake/src/Command/ModelCommand.php:99
+- /var/html/myProject/vendor/cakephp/bake/src/Command/ModelCommand.php:82
+- /var/html/myProject/vendor/cakephp/bake/src/Command/AllCommand.php:102
+- /var/html/myProject/vendor/cakephp/cakephp/src/Console/BaseCommand.php:179
+- /var/html/myProject/vendor/cakephp/cakephp/src/Console/CommandRunner.php:336
+- /var/html/myProject/vendor/cakephp/cakephp/src/Console/CommandRunner.php:171
+- /var/html/myProject/bin/cake.php:12
+
+
+
