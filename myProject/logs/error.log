@@ -948,3 +948,109 @@ Referer URL: http://localhost:8081/blogs/home
 Client IP: 172.17.0.1
 
 
+2020-08-19 02:25:04 Error: [Cake\Http\Exception\MissingControllerException] Controller class Home could not be found. in /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Home',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:249
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:137
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /home
+Client IP: 172.17.0.1
+
+
+2020-08-19 02:37:24 Error: [ArgumentCountError] Too few arguments to function debug(), 0 passed in /var/html/myProject/src/Controller/BlogsController.php on line 10 and at least 1 expected in /var/html/myProject/vendor/cakephp/cakephp/src/basics.php on line 44
+Stack Trace:
+- /var/html/myProject/src/Controller/BlogsController.php:10
+- /var/html/myProject/vendor/cakephp/cakephp/src/Event/EventManager.php:309
+- /var/html/myProject/vendor/cakephp/cakephp/src/Event/EventManager.php:286
+- /var/html/myProject/vendor/cakephp/cakephp/src/Event/EventDispatcherTrait.php:92
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:565
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:72
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /blogs/home
+Referer URL: http://localhost:8081/blogs/home
+Client IP: 172.17.0.1
+
+
+2020-08-19 02:40:36 Error: [Cake\View\Exception\MissingLayoutException] Layout file `blog.php` could not be found.
+
+The following paths were searched:
+
+- `/var/html/myProject/templates/layout/blog.php`
+- `/var/html/myProject/vendor/cakephp/cakephp/templates/layout/blog.php`
+ in blog.php on line 1426
+Exception Attributes: array (
+  'file' => 'blog.php',
+  'paths' => 
+  array (
+    0 => '/var/html/myProject/templates/layout/',
+    1 => '/var/html/myProject/vendor/cakephp/cakephp/templates/layout/',
+  ),
+)
+Stack Trace:
+- /var/html/myProject/vendor/cakephp/cakephp/src/View/View.php:788
+- /var/html/myProject/vendor/cakephp/cakephp/src/View/View.php:762
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:688
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/Controller.php:530
+- /var/html/myProject/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:147
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/myProject/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/myProject/webroot/index.php:40
+
+Request URL: /blogs/home
+Referer URL: http://localhost:8081/blogs/home
+Client IP: 172.17.0.1
+
+
